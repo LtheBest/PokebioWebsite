@@ -74,9 +74,11 @@ panier1.addEventListener("click", () => {
 
         //+
         sommeTotalValue += 9.50
+        compteur1 += 1
+
         const payer = document.createElement("button")
         payer.innerText="PAYER"
-        payer.style = 'position:absolute; outline:solid; top:80%; left:85%;'
+        payer.style = 'position:absolute; outline:solid; top:55%; left:60%; width:150px; height:50px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius:10px;'
         prix.appendChild(payer);
 
         payer.addEventListener("click",() => {
@@ -86,26 +88,25 @@ panier1.addEventListener("click", () => {
             prix.appendChild(facture)
         })
         
-        compteur1 += 1
 
         const incrementeA = document.createElement("button");
         incrementeA.addEventListener("click", () => {
+
             compteur1 += 1;
-            // localStorage.setItem("compteur1s", ++value);
             sommeTotalValue += 9.50
-            localStorage.setItem("somme", sommeTotalValue+=9.50);
             sommeTotalTitre.innerText = `Le Total :   ${sommeTotalValue} euros`;
 
         })
 
         incrementeA.innerText = "+";
-        incrementeA.style = 'position:absolute; top:5%;left:80%; width:20px; outline:solid;';
+        incrementeA.style = 'position:absolute; top:4%;left:70%; width:20px; height:25px;outline:solid; border-radius:12px;';
+
 
         //-
         const decrementeA = document.createElement("button");
         decrementeA.addEventListener("click", () => {
             
-            if(value == 0){
+            if(compteur1 == 0){
                 
 
                 panierValue.removeChild(menuA)
@@ -114,7 +115,7 @@ panier1.addEventListener("click", () => {
                 sommeTotalTitre.innerText = `Le Total :   ${sommeTotalValue} euros`;
 
             }else{
-                // localStorage.setItem("compteur1s", --value);
+
                 compteur1 -= 1
                 sommeTotalValue -= 9.50
                 sommeTotalTitre.innerText = `Le Total :   ${sommeTotalValue} euros`;
@@ -122,7 +123,7 @@ panier1.addEventListener("click", () => {
         })
 
         decrementeA.innerText = "-";
-        decrementeA.style = 'position:absolute; top:5%;left:30%; width:20px; outline:solid;';
+        decrementeA.style = 'position:absolute; top:4%;left:24%; width:20px; height:25px; outline:solid; border-radius:12px;';
         panierValue.appendChild(incrementeA);
         panierValue.appendChild(decrementeA);
 
@@ -149,7 +150,20 @@ panier2.addEventListener("click", () => {
     const textB = document.createTextNode("POKE CHICK'EN VÉGÉTAL");
 
     sommeTotalTitre.innerText = `Le Total :   ${sommeTotalValue}`;
-    menuB.style = 'position:absolute; top:15%;left:35%;';
+    menuB.style = 'position:absolute; top:20%;left:27%;';
+
+    const payer = document.createElement("button")
+    payer.innerText="PAYER"
+    payer.style = 'position:absolute; outline:solid; top:55%; left:60%; width:150px; height:50px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius:10px;'
+    prix.appendChild(payer);
+
+    payer.addEventListener("click",() => {
+        let facture = document.createElement("div");
+        facture.style = 'position:absolute; width:90%; height:60px; left:6%;line-height:32px; color:red;'
+        facture.innerText = 'Confirmez votre commande au +33 1 42 04 05 87 un livreur se met en route ;)'
+        prix.appendChild(facture)
+    })
+
 
     if(panierAdd2 > 0){
 
@@ -166,7 +180,7 @@ panier2.addEventListener("click", () => {
         })
 
         incrementeB.innerText = "+";
-        incrementeB.style = 'position:absolute; top:15%;left:80%; width:20px; outline:solid;';
+        incrementeB.style = 'position:absolute; top:20%;left:75%; width:20px; height:25px;outline:solid; border-radius:12px;';
 
         //-
         const decrementeB = document.createElement("button");
@@ -187,7 +201,7 @@ panier2.addEventListener("click", () => {
         })
 
         decrementeB.innerText = "-";
-        decrementeB.style = 'position:absolute; top:15%;left:30%; width:20px; outline:solid;';
+        decrementeB.style = 'position:absolute; top:20%;left:20%; width:20px; height:25px; outline:solid; border-radius:12px;';
         panierValue.appendChild(incrementeB);
         panierValue.appendChild(decrementeB);
 
@@ -214,6 +228,19 @@ panier3.addEventListener("click", () => {
     sommeTotalTitre.innerText = `Le Total :   ${sommeTotalValue}`;
     menuC.style = 'position:absolute; top:35%;left:35%;';
 
+    const payer = document.createElement("button")
+    payer.innerText="PAYER"
+    payer.style = 'position:absolute; outline:solid; top:55%; left:60%; width:150px; height:50px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius:10px;'
+    prix.appendChild(payer);
+
+    payer.addEventListener("click",() => {
+        let facture = document.createElement("div");
+        facture.style = 'position:absolute; width:90%; height:60px; left:6%;line-height:32px; color:red;'
+        facture.innerText = 'Confirmez votre commande au +33 1 42 04 05 87 un livreur se met en route ;)'
+        prix.appendChild(facture)
+    })
+
+
     if(panierAdd3 > 0){
 
         //+
@@ -229,7 +256,7 @@ panier3.addEventListener("click", () => {
         })
 
         incrementeC.innerText = "+";
-        incrementeC.style = 'position:absolute; top:35%;left:80%; width:20px; outline:solid;';
+        incrementeC.style = 'position:absolute; top:35%;left:75%; width:20px; height:25px;outline:solid; border-radius:12px;';
 
         //-
         const decrementeC = document.createElement("button");
@@ -249,7 +276,7 @@ panier3.addEventListener("click", () => {
         })
 
         decrementeC.innerText = "-";
-        decrementeC.style = 'position:absolute; top:35%;left:30%; width:20px; outline:solid;';
+        decrementeC.style = 'position:absolute; top:35%;left:20%; width:20px; height:25px; outline:solid; border-radius:12px;';
         panierValue.appendChild(incrementeC);
         panierValue.appendChild(decrementeC);
 
@@ -274,7 +301,19 @@ panier4.addEventListener("click", () => {
     const textD = document.createTextNode("POKÉ THON MARINÉ");
 
     sommeTotalTitre.innerText = `Le Total :   ${sommeTotalValue}`;
-    menuD.style = 'position:absolute; top:45%;left:35%;';
+    menuD.style = 'position:absolute; top:50%;left:32%;';
+
+    const payer = document.createElement("button")
+    payer.innerText="PAYER"
+    payer.style = 'position:absolute; outline:solid; top:55%; left:60%; width:150px; height:50px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius:10px;'
+    prix.appendChild(payer);
+
+    payer.addEventListener("click",() => {
+        let facture = document.createElement("div");
+        facture.style = 'position:absolute; width:90%; height:60px; left:6%;line-height:32px; color:red;'
+        facture.innerText = 'Confirmez votre commande au +33 1 42 04 05 87 un livreur se met en route ;)'
+        prix.appendChild(facture)
+    })
 
     if(panierAdd4 > 0){
 
@@ -292,7 +331,7 @@ panier4.addEventListener("click", () => {
         })
 
         incrementeD.innerText = "+";
-        incrementeD.style = 'position:absolute; top:45%;left:80%; width:20px; outline:solid;';
+        incrementeD.style = 'position:absolute; top:50%;left:75%; width:20px; height:25px;outline:solid; border-radius:12px;';
 
         //-
         const decrementeD = document.createElement("button");
@@ -312,7 +351,7 @@ panier4.addEventListener("click", () => {
         })
 
         decrementeD.innerText = "-";
-        decrementeD.style = 'position:absolute; top:45%;left:30%; width:20px; outline:solid;';
+        decrementeD.style = 'position:absolute; top:50%;left:20%; width:20px; height:25px; outline:solid; border-radius:12px;';
         panierValue.appendChild(incrementeD);
         panierValue.appendChild(decrementeD);
 
