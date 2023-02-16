@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 15vh;
+    background: #ffffff;
+    display: flex;
+    padding: 0% 16px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    -webkit-box-shadow: 0 0 10px #0f0e0e;
+        box-shadow: 0 0 10px #030303;
+  }
+
+  .header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  img.logo {
+    width: 158px;
+    height: 118px;
+  }
+  /* .header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #222;
+  } */
+
+  .header .navbar a {
+    font-size: 1.7rem;
+    color: #666;
+    margin: 0 1rem;
+  }
+    
+  
+  .header .navbar a:hover {
+    color: #bac34e;
+  }
+
+  .accueil {
+
+
+    background: url("./b2.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
+    height: 100vh;
+  
+  }
+
+  #logo {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 40%;
+    left: 45%;
+    border-radius: 10px;
+    
+  }
+
+  .accueil .container {
+    position: absolute;
+    top: 60%;
+    left: 24%;
+    outline: solid;
+    width: 210px;
+    height: 134px;
+    background-color: #ffffff;
+    border-radius: 11px;
+ 
+  }
+
+  .accueil .container #load {
+  
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    margin-top: 41%;
+    margin-left: 19%;
+    box-shadow: rgba(232, 246, 239, 0.4) 0px 5px, rgba(206, 244, 226, 0.3) 0px 10px, rgba(178, 234, 221, 0.2) 0px 15px, rgba(175, 245, 227, 0.1) 0px 20px, rgba(127, 250, 154, 0.05) 0px 25px;
+  }
+    .accueil .container #load:hover{
+    border-color: rgb(152, 246, 152);
+    
+    }
+    @media all and (max-width:30em){
+      .accueil .container .button4{
+    display:block;
+    margin:0.2em auto;
+  }
+}
+  
+  .accueil .container .concour {
+    position: absolute;
+    top:10%;
+    left:10%;
+
+  }
+
+  .menu {
+    width: 100%;
+    height: 100vh;
+    background-color: #666;
+
+  }
+
+  .apropos {
+    width: 100%;
+    height: 100vh;
+    background-color: #fffdfd;
+
+  }
+
+  .contact {
+    width: 100%;
+    height: 100vh;
+    
+    background-color: #b6d7a9;
+
+  }
+
+
+  /* a props css */
+
+.container .product {
+  position: absolute;
+    width: 35%;
+    height: 350px;
+    left: 64%;
+    top: 147%;
+    word-break:normal;
+    line-height:35px;
+
+  }
+
+.apropos .presentation {
+  width: 210px;
+  position: absolute;
+  top:117%;
+  left: 13%;
+  font-size: 20px;
+ 
+}
+
+img.imageP {
+  outline: solid;
+  position: absolute;
+  left: 72%;
+  top:115%;
+  box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+
+}
+
+.container .agence {
+  position: absolute;
+    width: 35%;
+    height: 350px;
+    left: 2%;
+    top: 125%;
+    word-break:normal;
+    line-height:35px;
+  }
+  
+ .contact #contact .title{
+  margin-top: 20px;
+  
+  text-align: center
+ }
+
+
+  /* Contact CSS */
+
+  
+  .services{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .services .box{
+    top: 200px;
+    position: relative;
+    width: 450px;
+    padding: 100px 40px 60px;
+    background: #fff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .services .box::before{
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #1b1d03;
+    transform: scaleY(0);
+    transform-origin:top;
+    transition: transform 0.5s;
+  }
+  .services .box:hover::before{
+    transform: scaleY(1);
+    transform-origin:bottom;
+    transition: transform 0.5s;
+  }
+  .services .box .icone{
+    
+    width: 90px;
+    height: 60px;
+  }
+  .services .box h2{
+    text-align: center;
+    font-size: 2rem;
+
+  }
+  .services .box p{
+    text-align: center;
+    top: 60px;
+    font-size: 1rem;
+
+  }
+
+  .services .box :hover h2{
+    color: #666;
+    opacity: 1;
+    transform: translateY(-40px);
+  }
+  .services .box :hover p{
+    color: #fff;
+    opacity: 1;
+    transform: translateY(-40px);
+  }
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+footer p {
+    color: #fff;
+}
+footer p span {
+    color: #29d9d5;
+}
+
