@@ -4,55 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéBio</title>
     <link rel="stylesheet" href="commander.css">
-    <title>Commander</title>
-
+    <link rel="stylesheet" href="barre_chargement.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <!-- header -->
-    <header class="header">
-
-        <!-- <a href="index.html" class="logo">PokéBio </a> -->
-        <img class="logo" src="logo.png" />
-        <div class="container">
-            <nav class="navbar">
-
-                <a href="index.html">Accueil</a>
-
-            </nav>
-
-            <!-- <img id="instagram" src="instagram.svg" /> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="logo.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ms-auto" style="align-items: center;">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://instagram.com/pokebio__?igshid=YmMyMTA2M2Y=">
+                  <img id="instagram" src="instagram.svg"/>
+              </a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
 
-    <div class="catalogue">
-
+    <div class="container">
         <div class="row">
-            <div class="productA"><img class="A" src="menuA.png"/></div>
-            <div class="productB"><img class="B" src="menuB.png"/></div>
-            <div class="productC"><img class="C" src="menuC.png"/></div>
+            <div class="col-md-4 col-xs-6 text-center">
+                <img class="A" src="menuA.png"/>
+                <button id="panier1" class="button-1" role="button">Ajouter</button>
+            </div>
+            <div class="col-md-4 col-xs-6 text-center">
+                <img class="B" src="menuB.png"/>
+                <button id="panier2" class="button-2" role="button">Ajouter</button>
+            </div>
+            <div class="col-md-4 col-xs-6 text-center">
+                <img class="C" src="menuC.png"/>
+                <button id="panier3" class="button-3" role="button">Ajouter</button>
+            </div>
+            <div class="col-md-4 col-xs-6 text-center">
+                <img class="D" src="menuD.png"/>
+                <button id="panier4" class="button-4" role="button">Ajouter</button>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="panier">
+                    <div id="panierValue"></div>
+                </div>
+            </div>
         </div>
-
-        <button id="panier1" class="button-1" role="button">Ajouter</button>
-        <button id="panier2" class="button-2" role="button">Ajouter</button>
-
-        <div class="roww">
-            <div class="productD"><img class="D" src="menuD.png"/></div>
-        </div>
-
-        <button id="panier3" class="button-3" role="button">Ajouter</button>
-        <button id="panier4" class="button-4" role="button">Ajouter</button>
     </div>
-    <div class="panier">
-        <div id="panierValue"></div>
-    </div>
-    
     <footer>
         <p> Réalisé par <span>G-16</span> | Tous les droits sont réservés.</p>
         <a href="https://www.pokebio.com/terms" style="color: #ccc;" target="_blank">Termes</a>            |
         <a href="https://www.pokebio.com/privacy" style="color: #ccc;" target="_blank">Confidentialit&#233;</a>
     </footer>
-
+    <footer>
+      <p> Réalisé par <span>G-16</span> | Tous les droits sont réservés.</p>
+      <a href="https://www.pokebio.com/terms" style="color: #ccc;" target="_blank">Termes</a>            |
+      <a href="https://www.pokebio.com/privacy" style="color: #ccc;" target="_blank">Confidentialit&#233;</a> 
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
     </body>
 </html>

@@ -7,110 +7,119 @@
     <title>PokéBio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="barre_chargement.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <header class="header">
-
-        <!-- <a href="index.html" class="logo">PokéBio </a> -->
-        <img class="logo" src="logo.png" />
-        <div class="container">
-            <nav class="navbar">
-
-                <a href="#accueil">Accueil</a>
-                <a href="Commander.html">Commander</a>
-                <a href="#apropos">À propos</a>
-                <a href="#contact">Contact</a>
-
-            </nav>
-
-            <a href="https://instagram.com/pokebio__?igshid=YmMyMTA2M2Y=">
-                <img id="instagram" src="instagram.svg"/>
-            </a>
+   
+        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo" src="logo.png" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto" style="align-items: center;">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Commander.html">Commander</a></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#apropos">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/pokebio__?igshid=YmMyMTA2M2Y=">
+                    <img id="instagram" src="instagram.svg"/>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
+    </nav>
 
 <!-- accueil part -->
-        <div class="accueil">
+    <div class="accueil">
 
-            <div class="progress-bar" style="display:none; --width: 1;" data-label="Loading..."></div>
-            <div id="accueil">
-                <div class="container">
-                    <div class="concour"  >Gros jeu concours Instagram !</div>
-                    <button id="load" style="background-color:#5a5a5a">Je participe</button>
-                </div>
-                
-                <img id="logo" src="menu.png" />
-             </div>
-             
-        </div>
-   
-    
-<!-- a propos  -->
-    <div class="apropos">
-        <div id="apropos">
-            <p class="presentation">Qui sommes-nous ?</p>
+        <div class="progress-bar" style="display:none; --width: 1;" data-label="Loading..."></div>
+        <div id="accueil">
             <div class="container">
-                <div class="agence">
-                    <p>Pokébio est un restaurant qui propose exclusivement des PokéBowls, un plat typique hawaïen uniquement composé de produits bio et éco responsables. 
+                <div class="concour"  >Gros jeu concours Instagram !</div>
+                <button id="load" style="background-color:#5a5a5a">Je participe</button>
+            </div>
+            
+            <img id="logo" src="menu.png" />
+            </div>
+            
+    </div>
+   
 
-                        Né de l’idée de 2 anciens cuisiniers, employés dans un restaurant gastronomique de banlieue parisienne, Laurent et Isabelle décident de démissionner et de lancer après avoir passé leur lune de miel à Hawaï.
-                        
-                        Le couple est tombé amoureux de cette mystérieuse culture faite de coutumes, de traditions et de valeurs fascinantes. Leur coup de cœur lors de ce voyage : la gastronomie Hawaïenne.</p>
+    <div class="container">
+        <div class="row">
+            <h1 id="apropos" class="text-center mt-5">Qui sommes-nous ?</h1>
+                <div class="col-md-6 mt-5 mb-5">
+                    <p>Pokébio est un restaurant qui propose exclusivement des PokéBowls, un plat typique hawaïen uniquement composé de produits bio et éco responsables. Né de l’idée de 2 anciens cuisiniers, employés dans un restaurant gastronomique de banlieue parisienne, Laurent et Isabelle décident de démissionner et de lancer après avoir passé leur lune de miel à Hawaï. <br> Le couple est tombé amoureux de cette mystérieuse culture faite de coutumes, de traditions et de valeurs fascinantes. <br> Leur coup de cœur lors de ce voyage : la gastronomie Hawaïenne.
+                    </p>
                 </div>
-
-                <img class="imageP" src="2.jpeg" />
-
-                <div class="product">
-                    <p>Le PokéBio c'est quoi ? C'est un plat complet et coloré, riche et sain. Dans ce plat complet, on y trouve généralement, du thon rouge ou du saumon mariné. Sans gras et riche en protéine, la simplicité et la fraîcheur des ingrédients non transformés et préparés au dernier moment font du poké un vrai bol d’énergie positive !
+                <div class="col-md-6 mt-5 mb-5">
+                    <img class="imageP" src="2.jpeg" />
+                    <p class="mt-4">Le PokéBio c'est quoi ? C'est un plat complet et coloré, riche et sain. Dans ce plat complet, on y trouve généralement, du thon rouge ou du saumon mariné. Sans gras et riche en protéine, la simplicité et la fraîcheur des ingrédients non transformés et préparés au dernier moment font du poké un vrai bol d’énergie positive !
 
                         Des fruits frais coupés en dés ou en tranches, comme l’avocat, la mangue….un savoureux mélange de goûts et de saveurs.
                         
                         Le poke bowl est personnalisable à l’infini. Il est apprécié pour sa fraîcheur et l’énergie procurée par tous ces ingrédients naturels.</p>
                 </div>
-
-            </div>
-
         </div>
     </div>
 
 
-<!--  contact section -->
-<div class="contact">
-    <div id="contact">
-        <h1 class="title">Contact</h1>
-        <div class="services">
-            <div class="box">
-                <img class="icone" src="telephone.svg" alt="">
-                <div class="content">
-                    <h2>Par Téléphone</h2>
-                    <p> Appelez nous au: +33 1 42 04 05 87</p>
+    <div class="contact">
+        <h1  id="contact"  class="text-center mb-5">Contact</h1>
+        <div class="container">  
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img class="icone mb-3" src="telephone.svg" alt="">
+                        <h2>Par Téléphone</h2>
+                        <p> Appelez nous au: +33 1 42 04 05 87</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <img class="icone" src="insta.svg" alt="">
-                <div class="content">
-                    <h2>Via Instagram</h2>
-                    <p> Retrouvez nous aussi sur instagram en cliquant sur l'icone: <strong>INSTRAGRAM</strong></a></p>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img class="icone" src="linkedin.gif" alt="">
+                        <h2>Sur linkedin</h2>
+                        <p> cliquez : <a href="https://www.linkedin.com/company/pok%C3%A9bio/"><strong>ici</strong></a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <img class="icone" src="gif.gif" alt="">
-                <div class="content">
-                    <h2>Adresse</h2>
-                    <p> 6 rue Sèvres 75006 Paris</p>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img class="icone" src="gif.gif" alt="">
+                        <h2>Adresse</h2>
+                        <p> 6 rue Sèvres 75006 Paris</p>
+                    </div>
                 </div>
             </div>
         </div>
-       
     </div>
-</div>
 
-<footer>
-    <p> Réalisé par <span>G-16</span> | Tous les droits sont réservés.</p>
-    <a href="https://www.pokebio.com/terms" style="color: #ccc;" target="_blank">Termes</a>            |
-    <a href="https://www.pokebio.com/privacy" style="color: #ccc;" target="_blank">Confidentialit&#233;</a>
-    
-</footer>
-<script src="barre_chargement.js"></script>
+    <footer>
+        <p> Réalisé par <span>G-16</span> | Tous les droits sont réservés.</p>
+        <a href="https://www.pokebio.com/terms" style="color: #ccc;" target="_blank">Termes</a>            |
+        <a href="https://www.pokebio.com/privacy" style="color: #ccc;" target="_blank">Confidentialit&#233;</a>
+        
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="barre_chargement.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
